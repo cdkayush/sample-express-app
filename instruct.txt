@@ -1,0 +1,20 @@
+docker run -it -p 80:80 centos:7
+yum install httpd -y
+echo "hello this is portmapping container" > /var/www/html/index.html
+
+# this command to keep on running even if i minimise the container
+
+/usr/sbin/httpd -DFOREGROUND
+
+
+-----
+1. Version of node js that Im using:
+$ node --version
+v16.18.1
+
+2. This is how you can install the Deps:
+$ npm install
+
+3. To run the application:
+$ node app.js
+---
